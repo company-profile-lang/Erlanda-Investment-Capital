@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Homepage from './pages/HomePage';
+// Impor halaman lainnya (buat file kosong terlebih dahulu)
+// import About from './pages/About';
+// import Services from './pages/Services';
+// import Portfolio from './pages/Portfolio';
+// import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          {/* Tambahkan route untuk halaman lain di sini */}
+          {/* <Route path="/tentang-kami" element={<About />} /> */}
+          {/* <Route path="/layanan" element={<Services />} /> */}
+          {/* <Route path="/portofolio" element={<Portfolio />} /> */}
+          {/* <Route path="/kontak" element={<Contact />} /> */}
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
