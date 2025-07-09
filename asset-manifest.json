@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/Erlanda-Investment-Capital/static/css/main.9a6667e6.css",
-    "main.js": "/Erlanda-Investment-Capital/static/js/main.fcc10b99.js",
+    "main.js": "/Erlanda-Investment-Capital/static/js/main.272e49fd.js",
     "static/js/453.06ee2d31.chunk.js": "/Erlanda-Investment-Capital/static/js/453.06ee2d31.chunk.js",
+    "static/media/profile.jpg": "/Erlanda-Investment-Capital/static/media/profile.46a5c216e666a245b343.jpg",
     "index.html": "/Erlanda-Investment-Capital/index.html",
     "main.9a6667e6.css.map": "/Erlanda-Investment-Capital/static/css/main.9a6667e6.css.map",
-    "main.fcc10b99.js.map": "/Erlanda-Investment-Capital/static/js/main.fcc10b99.js.map",
+    "main.272e49fd.js.map": "/Erlanda-Investment-Capital/static/js/main.272e49fd.js.map",
     "453.06ee2d31.chunk.js.map": "/Erlanda-Investment-Capital/static/js/453.06ee2d31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a6667e6.css",
-    "static/js/main.fcc10b99.js"
+    "static/js/main.272e49fd.js"
   ]
 }
