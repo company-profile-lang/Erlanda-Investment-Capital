@@ -60,3 +60,295 @@
   position: relative;
   z-index: 2;
 }
+
+
+/* --- Styling untuk Page Hero Section (Contoh untuk halaman lain seperti About Us, Contact Us) --- */
+.page-hero-section {
+  background-color: #343a40; /* Warna gelap atau Anda bisa pakai gambar umum */
+  background-size: cover;
+  background-position: center;
+  min-height: 300px; /* Tinggi yang lebih pendek dari homepage hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.page-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Overlay gelap */
+  z-index: 0;
+}
+
+.page-hero-section .container {
+  z-index: 1; /* Pastikan teks di atas overlay */
+}
+
+/* Styling untuk Timeline (Sejarah Perusahaan) */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e9ecef; /* Warna garis timeline */
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  width: 45%;
+  float: left;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+}
+
+.timeline > li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #dee2e6;
+  border-right: 0 solid #dee2e6;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline > li .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #0d6efd; /* Warna badge, sesuaikan dengan warna primary Bootstrap */
+  border-radius: 50%;
+  z-index: 100;
+}
+
+/* Responsif untuk Timeline */
+@media(max-width: 767px) {
+  .timeline:before {
+    left: 20px;
+  }
+  .timeline > li .timeline-panel {
+    width: 100%;
+    float: right;
+    padding: 15px;
+  }
+  .timeline > li .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline > li .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .timeline > li .timeline-badge {
+    left: 20px;
+    margin-left: -25px;
+    top: 16px;
+  }
+}
+
+/* Styling untuk Hero Carousel */
+.hero-carousel {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
+.hero-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-carousel .carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-carousel .carousel-caption h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-carousel .carousel-caption p {
+  font-size: 1.25rem;
+  max-width: 800px;
+}
+
+.hero-carousel .carousel-caption .btn {
+  margin-top: 1.5rem;
+}
+
+/* Styling untuk Card Proyek Unggulan */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* --- General improvements for Contact Us page layout --- */
+/* Ensure the page-hero-section for contact page has a distinct background */
+.contact-hero-bg {
+  /* Using a subtle dark gradient for a more modern, less flat look */
+  background: linear-gradient(135deg, #2c3e50, #4a6a8a); /* Dark blue-grey gradient */
+  /* Alternatively, you could use a pattern image: */
+  /* background-image: url('../assets/subtle-tech-pattern.png'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+
+/* Adjust card body padding if needed to give more breathing room */
+.card-body {
+    padding: 2rem; /* Default is 1rem, 2rem gives more space */
+}
+
+
+/* --- THE CORRECTED AND CONSOLIDATED SOCIAL ICONS STYLING --- */
+
+/* --- Styling for the social-icons container --- */
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-color: yellow; */ /* This was your test, you can remove it */
+  /* border: 5px solid red; */   /* This was your test, you can remove it */
+  /* padding: 10px; */           /* This was your test, you can remove it */
+  
+  /* If you want the icons to be perfectly centered within their container */
+  /* justify-content: center; */
+  /* If you want space between them evenly */
+  /* justify-content: space-around; */
+}
+
+/* --- Styling for individual social icon links (the <a> tags) --- */
+.social-icons a {
+  text-decoration: none; /* Remove underline from links */
+  color: var(--bs-secondary); /* Default color for icons, using Bootstrap secondary for consistency */
+  font-size: 2rem; /* Make icons larger */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  margin-right: 15px; /* Space between icons */
+  display: inline-flex; /* Ensure flex behavior for centering if needed */
+  align-items: center;
+  justify-content: center;
+  /* Optional: Add a subtle border or background to make them stand out more */
+  /* border: 1px solid var(--bs-secondary); */
+  /* border-radius: 50%; */
+  /* width: 50px; */
+  /* height: 50px; */
+}
+
+/* --- Hover effects for social icons --- */
+.social-icon-hover:hover {
+  transform: translateY(-5px) scale(1.1); /* Lifts the icon slightly and scales it up */
+}
+
+/* Specific colors on hover for brand recognition, if desired */
+.social-icons a.text-primary:hover { /* For LinkedIn (default primary) */
+    color: #0A66C2 !important; /* LinkedIn Blue */
+}
+.social-icons a.text-info:hover { /* For Twitter */
+    color: #1DA1F2 !important; /* Twitter Blue */
+}
+.social-icons a.text-danger:hover { /* For YouTube */
+    color: #FF0000 !important; /* YouTube Red */
+}
+
+/* --- Ensure Bootstrap variable definitions (if not already in your global CSS) --- */
+/* These are standard Bootstrap variables, ensure they are accessible or define custom ones */
+:root {
+  --bs-primary: #0d6efd; /* Default primary blue */
+  --bs-secondary: #6c757d; /* Default secondary gray */
+  --bs-info: #0dcaf0;     /* Default info cyan */
+  --bs-danger: #dc3545;   /* Default danger red */
+  /* Custom brand colors for hover effects */
+  --bs-twitter: #1DA1F2;
+  --bs-youtube: #FF0000;
+  --bs-linkedin: #0A66C2;
+}

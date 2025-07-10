@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={6} className="text-center text-md-start mb-3 mb-md-0">
-            <p>&copy; {new Date().getFullYear()} PT Erlanda Investment Capital. All Rights Reserved.</p>
+            <p>&copy; 2019 PT Erlanda Investment Capital. All Rights Reserved.</p>
           </Col>
           <Col md={6} className="text-center text-md-end">
             <a href="https://linkedin.com" className="text-white me-3"><FaLinkedin size={24} /></a>
