@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/Erlanda-Investment-Capital/static/css/main.9a6667e6.css",
-    "main.js": "/Erlanda-Investment-Capital/static/js/main.272e49fd.js",
+    "main.css": "/Erlanda-Investment-Capital/static/css/main.b681c0dd.css",
+    "main.js": "/Erlanda-Investment-Capital/static/js/main.3615e0dc.js",
     "static/js/453.06ee2d31.chunk.js": "/Erlanda-Investment-Capital/static/js/453.06ee2d31.chunk.js",
+    "static/media/heroSlide1.png": "/Erlanda-Investment-Capital/static/media/heroSlide1.ff8bc4273f1a4d6a9e7e.png",
+    "static/media/siber.png": "/Erlanda-Investment-Capital/static/media/siber.9cc42d2335a527827ecc.png",
+    "static/media/hero3.png": "/Erlanda-Investment-Capital/static/media/hero3.427c2b8c0506a9e39384.png",
+    "static/media/AI_mili.jpg": "/Erlanda-Investment-Capital/static/media/AI_mili.5bc5f0f1e518c605e0d8.jpg",
+    "static/media/anoa.webp": "/Erlanda-Investment-Capital/static/media/anoa.6da675463cde401cfef4.webp",
     "static/media/profile.jpg": "/Erlanda-Investment-Capital/static/media/profile.46a5c216e666a245b343.jpg",
+    "static/media/smart_v.webp": "/Erlanda-Investment-Capital/static/media/smart_v.2898daf8b71a9ed45c76.webp",
+    "static/media/drone.webp": "/Erlanda-Investment-Capital/static/media/drone.47dd0421fe26d01ee92f.webp",
     "index.html": "/Erlanda-Investment-Capital/index.html",
-    "main.9a6667e6.css.map": "/Erlanda-Investment-Capital/static/css/main.9a6667e6.css.map",
-    "main.272e49fd.js.map": "/Erlanda-Investment-Capital/static/js/main.272e49fd.js.map",
+    "main.b681c0dd.css.map": "/Erlanda-Investment-Capital/static/css/main.b681c0dd.css.map",
+    "main.3615e0dc.js.map": "/Erlanda-Investment-Capital/static/js/main.3615e0dc.js.map",
     "453.06ee2d31.chunk.js.map": "/Erlanda-Investment-Capital/static/js/453.06ee2d31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a6667e6.css",
-    "static/js/main.272e49fd.js"
+    "static/css/main.b681c0dd.css",
+    "static/js/main.3615e0dc.js"
   ]
 }
